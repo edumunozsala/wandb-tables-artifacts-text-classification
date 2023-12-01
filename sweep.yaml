@@ -1,0 +1,37 @@
+# The program to run
+program: train.py
+
+# Method can be grid, random or bayes
+method: bayes
+
+# Project this sweep is part of
+project: consumer_complaints_classification
+#entity: av-team
+
+# Metric to optimize
+metric:
+  name: epoch/val_accuracy
+  goal: maximize
+
+
+# Parameters space to search
+parameters:
+  lr:
+    distribution: log_uniform_values
+    min: 1e-4
+    max: 1e-2
+  weight_decay:
+    distribution: uniform
+    min: 0.8
+    max: 0.95
+  batch_size:
+    values: [64,128,256]
+  dropout:
+    values: [0.2,0.3,0.5]
+  kernel_size:
+    values: [32,64]
+  filter_size:
+    values: [5,7]
+
+# Number of runs
+run_cap: 20

@@ -1,0 +1,9 @@
+WANDB_PROJECT = "consumer_complaints_classification"
+ENTITY = None # set this to team name if working in a team
+RAW_DATA_AT = 'consumer_complaints_eda'
+PROCESSED_DATA_AT = 'consumer_complaints_split'
+SPLIT_FILENAME = 'consumer_complaints_split.csv'
+BASELINE_DATA_AT = 'consumer_complaints_baseline'
+HPTUNING_DATA_AT = 'consumer_complaints_hptuning'
+EVALUATION_DATA_AT = 'consumer_complaints_evaluation'
+TESTEVALUATION_DATA_AT = 'consumer_complaints_test_evaluation'

@@ -1,0 +1,8 @@
+wandb
+pandas
+numpy
+matplotlib
+keras
+tensorflow
+scikit-learn
+scikit-plot
